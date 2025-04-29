@@ -85,3 +85,41 @@ body{
 #radio5:checked ~ .first{
     margin-left: -100%;
 }
+
+
+
+
+
+
+.auto-nav{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.auto-nav:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~.auto-nav .auto-btn1{
+    background-color: white;
+    
+}
+#radio2:checked ~.auto-nav .auto-btn2{
+    background-color: white;
+
+}
+#radio3:checked ~.auto-nav .auto-btn3{
+    background-color: white;
+
+}
+#radio4:checked ~.auto-nav .auto-btn4{
+    background-color: white;
+
+}
+#radio5:checked ~.auto-nav .auto-btn5{
+    background-color: white;
+
+}
