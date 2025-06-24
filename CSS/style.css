@@ -1,57 +1,57 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(72deg,gray 30%,#575555 60%);
+    background: linear-gradient(72deg, gray 30%, #575555 60%);
 }
 
-.container-slider{
+.container-slider {
     margin: 0 auto;
     width: 800px;
     height: 400px;
     overflow: hidden;
 }
 
-.slides{
+.slides {
     width: 400%;
     /*height: 400px;*/
     display: flex;
 }
 
-.slides input{
+.slides input {
     display: none;
 }
 
-.slide{
+.slide {
     width: 25%;
     position: relative;
     transition: 2s;
 }
 
-.slide img{
+.slide img {
     width: 800px;
 }
 
-.manual-nav{
+.manual-nav {
     position: absolute;
     width: 800px;
     margin-top: -40px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     top: 75%;
 }
 
-.manual-btn{
+.manual-btn {
     border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
@@ -62,36 +62,31 @@ body{
     margin: 6px;
 }
 
-.MANUAL-BTN:NOT(:last-child){
+.MANUAL-BTN:not(:last-child) {
     margin-right: 40px;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked ~ .first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked ~ .first {
     margin-left: -25%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked ~ .first {
     margin-left: -50%;
 }
 
-#radio4:checked ~ .first{
+#radio4:checked ~ .first {
     margin-left: -75%;
 }
 
-#radio5:checked ~ .first{
+#radio5:checked ~ .first {
     margin-left: -100%;
 }
 
-
-
-
-
-
-.auto-nav{
+.auto-nav {
     border: 2px solid blue;
     padding: 5px;
     border-radius: 10px;
@@ -99,27 +94,22 @@ body{
     transition: 1s;
 }
 
-.auto-nav:not(:last-child){
+.auto-nav:not(:last-child) {
     margin-right: 40px;
 }
 
-#radio1:checked ~.auto-nav .auto-btn1{
+#radio1:checked ~ .auto-nav .auto-btn1 {
     background-color: white;
-    
 }
-#radio2:checked ~.auto-nav .auto-btn2{
+#radio2:checked ~ .auto-nav .auto-btn2 {
     background-color: white;
-
 }
-#radio3:checked ~.auto-nav .auto-btn3{
+#radio3:checked ~ .auto-nav .auto-btn3 {
     background-color: white;
-
 }
-#radio4:checked ~.auto-nav .auto-btn4{
+#radio4:checked ~ .auto-nav .auto-btn4 {
     background-color: white;
-
 }
-#radio5:checked ~.auto-nav .auto-btn5{
+#radio5:checked ~ .auto-nav .auto-btn5 {
     background-color: white;
-
 }
